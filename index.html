@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khairy ElSayed — High-Performance Software Engineer &amp; CS Sophomore | C++, OOP &amp; Data Structures</title>
+  <meta name="description" content="Portfolio of Khairy ElSayed — Computer Science Sophomore at BNU, specializing in high-performance C++, Object-Oriented System Architecture, Advanced Data Structures, and ICPC Competitive Programming."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     CURSOR GLOW
+═══════════════════════════════════════════ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <span class="logo-k">K</span><span class="logo-e">E</span>
+    <span class="logo-dot"></span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#about" data-label="About">About</a></li>
+    <li><a href="#skills" data-label="Skills">Technical Arsenal</a></li>
+    <li><a href="#softskills" data-label="Soft Skills">Leadership &amp; Communication</a></li>
+    <li><a href="#projects" data-label="Projects">Engineered Systems</a></li>
+    <li><a href="#education" data-label="Education">Academics</a></li>
+    <li><a href="#contact" data-label="Contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme" title="Toggle theme">
+      <!-- Sun icon -->
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <!-- Moon icon -->
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+    <button class="cv-btn" id="cvBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Executive CV
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="drawer-inner">
+    <a href="#about" class="d-link"><span class="d-num">01</span> About &amp; Mindset</a>
+    <a href="#skills" class="d-link"><span class="d-num">02</span> Technical Arsenal</a>
+    <a href="#softskills" class="d-link"><span class="d-num">03</span> Leadership &amp; Communication</a>
+    <a href="#projects" class="d-link"><span class="d-num">04</span> Engineered Systems</a>
+    <a href="#education" class="d-link"><span class="d-num">05</span> Academic Standing</a>
+    <a href="#contact" class="d-link"><span class="d-num">06</span> Direct Contact</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section id="hero">
+  <!-- Noise texture overlay -->
+  <div class="hero-noise"></div>
+  <!-- Gradient orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-pill reveal">
+      <img src="profile.jpg" alt="Khairy ElSayed" class="hero-pill-avatar"/>
+      <span class="pill-dot"></span>
+      High-Caliber CS Sophomore · Available for Software Engineering Internships
+    </div>
+
+    <h1 class="hero-heading reveal">
+      <span class="line-1">Khairy</span>
+      <span class="line-2">ElSayed<em>.</em></span>
+    </h1>
+
+    <div class="hero-sub reveal">
+      <div class="hero-title-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        Top CS Major · Sophomore (Year 2)
+      </div>
+      <div class="hero-title-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        High-Performance C++ &amp; OOP Architecture
+      </div>
+      <div class="hero-title-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        Advanced Data Structures &amp; Big-O Mastery
+      </div>
+      <div class="hero-title-tag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        ICPC Level 1 Competitive Programmer
+      </div>
+    </div>
+
+    <p class="hero-desc reveal">
+      A relentless Computer Science sophomore at BNU dedicated to mastering software engineering from the silicon up. Obsessed with <strong>low-level memory management</strong>, <strong>clean Object-Oriented design</strong>, and <strong>non-linear data structures</strong>. Tested in collegiate competitive programming (<strong>ICPC Level 1</strong>), bridging raw algorithmic horsepower with articulate technical leadership to engineer software built for scale, speed, and elegance.
+    </p>
+
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
+        Explore Engineered Systems
+      </a>
+      <a href="#contact" class="btn-outline">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.62 4.38 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Initiate Dialogue
+      </a>
+      <div class="hero-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Code Repositories">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Professional Network">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://codeforces.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Codeforces Competitive Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="hero-stats reveal">
+      <div class="hstat">
+        <strong>Year 2</strong>
+        <span>Elite Sophomore</span>
+      </div>
+      <div class="hstat-divider"></div>
+      <div class="hstat">
+        <strong>3.1</strong>
+        <span>GPA / 4.0 Standing</span>
+      </div>
+      <div class="hstat-divider"></div>
+      <div class="hstat">
+        <strong>4+</strong>
+        <span>Core Systems Built</span>
+      </div>
+      <div class="hstat-divider"></div>
+      <div class="hstat">
+        <strong>ICPC</strong>
+        <span>Competitive Finalist</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint">
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="sec-label reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      The Profile
+    </div>
+    <h2 class="sec-title reveal">Architectural Precision &amp; Algorithmic Rigor</h2>
+
+    <div class="about-grid">
+      <!-- Left: Avatar card with Profile Picture Frame -->
+      <div class="about-card reveal">
+        <!-- AVATAR PHOTO CONTAINER -->
+        <div class="avatar-wrap" id="avatarWrap">
+          <img src="profile.jpg" alt="Khairy ElSayed" class="avatar-img" id="avatarImg"/>
+          <div class="avatar-initials" id="avatarInitials" style="display:none;">KE</div>
+          <div class="avatar-glow"></div>
+          <div class="avatar-badge-tag">
+            <span class="avatar-badge-dot"></span>
+            ACTIVE
+          </div>
+        </div>
+
+        <div class="about-card-info" style="text-align: center;">
+          <h3 style="font-size: 1.35rem; margin-bottom: 4px;">Khairy ElSayed</h3>
+          <p style="color: var(--c-accent); font-weight: 700; margin-bottom: 1.25rem;">Future Software Engineer · CS Sophomore @ BNU</p>
+        </div>
+
+        <!-- Quick info list -->
+        <ul class="about-quick">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Egypt · Remote &amp; Global Mobility
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.62 4.38 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +20 155 422 6701
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            khairykewan13@gmail.com
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            BNU University · Expected 2029
+          </li>
+        </ul>
+
+        <!-- Soft skills badges -->
+        <div class="soft-wrap">
+          <span class="soft-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Technical Articulation
+          </span>
+          <span class="soft-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            High-Stakes Teamwork
+          </span>
+          <span class="soft-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Methodical Problem Solver
+          </span>
+          <span class="soft-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Rapid Adaptability
+          </span>
+        </div>
+      </div>
+
+      <!-- Right: Bio text -->
+      <div class="about-bio">
+        <p class="bio-lead reveal">
+          "I do not simply write code — I architect resilient, memory-optimized systems from first principles."
+        </p>
+        <p class="bio-body reveal">
+          My journey in computer science is defined by an uncompromising commitment to fundamental mastery. While many developers remain comfortable at surface abstractions, I immerse myself in the mechanics of modern <strong>C++</strong>: heap allocation, deterministic resource management (RAII), pointer arithmetic, and the ground-up implementation of non-linear data structures.
+        </p>
+        <p class="bio-body reveal">
+          Through intense collegiate competitive programming in <strong>ICPC Level 1</strong>, I forged an instinct for algorithmic pattern recognition, asymptotic complexity analysis (Big-O), and surgical debugging under contest pressure.
+        </p>
+        <p class="bio-body reveal">
+          Crucially, I balance raw technical muscle with commanding interpersonal communication. True engineering success requires articulating architectural trade-offs, penning immaculate documentation, driving collaborative peer reviews, and aligning team efforts toward decisive execution.
+        </p>
+
+        <!-- Feature cards -->
+        <div class="bio-cards reveal">
+          <div class="bio-feat">
+            <div class="bio-feat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <strong>Systems-Level C++ &amp; OOP Architecture</strong>
+              <span>Designing clean, polymorphic class hierarchies, RAII-safe memory management, and custom algorithmic engines</span>
+            </div>
+          </div>
+          <div class="bio-feat">
+            <div class="bio-feat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <strong>Competitive Algorithmic Combatant</strong>
+              <span>ICPC Level 1 participant; adept in rapid pattern recognition, optimal Big-O bounds, and edge-case elimination</span>
+            </div>
+          </div>
+          <div class="bio-feat">
+            <div class="bio-feat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <strong>Strategic Technical Communicator</strong>
+              <span>Author of publication-grade documentation, articulate presenter, and natural collaborator in high-stakes environments</span>
+            </div>
+          </div>
+          <div class="bio-feat">
+            <div class="bio-feat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <strong>Top-Tier CS Scholar · BNU University</strong>
+              <span>Sophomore Standing · GPA 3.1/4.0 · Relentless pursuit of computer science mastery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════════ -->
+<section id="skills" class="section section-tinted">
+  <div class="container">
+    <div class="sec-label reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+      Technical Arsenal
+    </div>
+    <h2 class="sec-title reveal">Engineered for Performance</h2>
+
+    <div class="skills-bento reveal">
+
+      <!-- Card 1: C++ & OOP Systems Design -->
+      <div class="sk-card sk-large">
+        <div class="sk-icon-wrap sk-cpp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>C++ Systems &amp; OOP Architecture</h3>
+        <p>Comprehensive mastery of low-level C++, Object-Oriented Design (Inheritance hierarchies, runtime Polymorphism, Abstract Contracts, Encapsulation), dynamic pointer mechanics, RAII resource safety, and STL architecture.</p>
+        <div class="sk-bar-wrap">
+          <div class="sk-bar"><div class="sk-fill" data-pct="85"></div></div>
+          <span>85%</span>
+        </div>
+        <div class="sk-tags">
+          <span>OOP</span><span>Polymorphism</span><span>Encapsulation</span><span>Pointers</span><span>RAII</span><span>STL Internals</span><span>Templates</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Advanced Data Structures & Complexity -->
+      <div class="sk-card sk-large sk-accent">
+        <div class="sk-icon-wrap sk-ds">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </div>
+        <h3>Data Structures &amp; Complexity Analysis</h3>
+        <p>Engineered custom, zero-dependency implementations of linear and hierarchical structures: Doubly Linked Lists, Stacks, Queues, Binary Search Trees (BST), and Hash Tables with asymptotic Big-O runtime profiling.</p>
+        <div class="sk-bar-wrap">
+          <div class="sk-bar"><div class="sk-fill" data-pct="80"></div></div>
+          <span>80%</span>
+        </div>
+        <div class="sk-tags">
+          <span>Binary Search Trees</span><span>Hash Tables</span><span>Doubly Linked Lists</span><span>Stacks &amp; Queues</span><span>Big-O Bounds</span><span>Recursion</span>
+        </div>
+      </div>
+
+      <!-- Card 3: ICPC & Algorithmic Strategy -->
+      <div class="sk-card sk-medium">
+        <div class="sk-icon-wrap sk-ps">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h3>ICPC Competitive Arena</h3>
+        <p>Collegiate ICPC Level 1 participant; rapid pattern recognition, greedy strategies, binary search variants, and high-pressure problem solving.</p>
+        <div class="sk-bar-wrap">
+          <div class="sk-bar"><div class="sk-fill" data-pct="70"></div></div>
+          <span>70%</span>
+        </div>
+        <div class="sk-tags">
+          <span>ICPC Level 1</span><span>Competitive Coding</span><span>Algorithm Design</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Dev Tooling & Version Control -->
+      <div class="sk-card sk-medium">
+        <div class="sk-icon-wrap sk-git">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"/><path d="M12 12v3"/></svg>
+        </div>
+        <h3>Git, GitHub &amp; Linux CLI</h3>
+        <p>Version control architecture, feature branching, clean commit hygiene, Linux terminal workflows, and GDB debugger tracing.</p>
+        <div class="sk-bar-wrap">
+          <div class="sk-bar"><div class="sk-fill" data-pct="75"></div></div>
+          <span>75%</span>
+        </div>
+        <div class="sk-tags">
+          <span>Git Architecture</span><span>GitHub Workflows</span><span>Terminal CLI</span><span>GDB Tracing</span>
+        </div>
+      </div>
+
+      <!-- Wide card: Learning roadmap -->
+      <div class="sk-card sk-wide sk-dark">
+        <div class="roadmap-label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Technical Trajectory &amp; Academic Milestones
+        </div>
+        <div class="roadmap-items">
+          <div class="rm-item rm-done">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            C++ Systems Foundations
+          </div>
+          <div class="rm-item rm-done">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Object-Oriented Design (OOP)
+          </div>
+          <div class="rm-item rm-done">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Core &amp; Non-Linear Data Structures
+          </div>
+          <div class="rm-item rm-done">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            ICPC Level 1 Training
+          </div>
+          <div class="rm-item rm-active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Advanced Graph Theory &amp; Dynamic Programming
+          </div>
+          <div class="rm-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+            GoF Design Patterns &amp; SOLID Architecture
+          </div>
+          <div class="rm-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+            Database Internals &amp; SQL Systems
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SOFT SKILLS & COMMUNICATION (DEDICATED SECTION)
+═══════════════════════════════════════════ -->
+<section id="softskills" class="section">
+  <div class="container">
+    <div class="sec-label reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Interpersonal Leadership
+    </div>
+    <h2 class="sec-title reveal">Communication in Action</h2>
+
+    <div class="soft-skills-grid reveal">
+      <!-- Card 1 -->
+      <div class="soft-card">
+        <div class="soft-card-icon soft-icon-purple">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Strategic Technical Articulation</h3>
+        <p>I articulate complex engineering trade-offs with razor-sharp clarity. From penning exhaustive architectural documentation to authoring clean, maintainable code comments, I ensure system logic is intuitive and transparent across teams.</p>
+        <div class="soft-card-evidence">
+          <span class="evidence-pill">Immaculate Documentation</span>
+          <span class="evidence-pill">Class Diagrams</span>
+          <span class="evidence-pill">Technical Precision</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="soft-card">
+        <div class="soft-card-icon soft-icon-blue">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>High-Stakes Team Synergy</h3>
+        <p>Forged under the intense pressure of ICPC competitive contests. I excel in active listening, strategic task division, constructive code reviews, and elevating team morale when tackling complex algorithmic bottlenecks.</p>
+        <div class="soft-card-evidence">
+          <span class="evidence-pill">ICPC Team Dynamics</span>
+          <span class="evidence-pill">Constructive Code Reviews</span>
+          <span class="evidence-pill">Empathy &amp; Consensus</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="soft-card">
+        <div class="soft-card-icon soft-icon-amber">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Methodical Root-Cause Analysis</h3>
+        <p>Zero tolerance for guesswork. When confronting non-trivial memory leaks or algorithmic failures, I methodically deconstruct call stacks, evaluate state invariants, and isolate edge cases with scientific discipline.</p>
+        <div class="soft-card-evidence">
+          <span class="evidence-pill">Pointer Auditing</span>
+          <span class="evidence-pill">Asymptotic Optimization</span>
+          <span class="evidence-pill">Composure Under Pressure</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="soft-card">
+        <div class="soft-card-icon soft-icon-green">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h3>Hyper-Velocity Adaptability</h3>
+        <p>Possessing an insatiable intellectual hunger. Continually self-studying advanced software paradigms ahead of academic curricula, welcoming challenging feedback, and rapidly mastering new toolchains.</p>
+        <div class="soft-card-evidence">
+          <span class="evidence-pill">Rapid Learning Curve</span>
+          <span class="evidence-pill">Proactive Growth</span>
+          <span class="evidence-pill">Relentless Drive</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft skills quote banner -->
+    <div class="soft-quote-banner reveal">
+      <div class="quote-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>
+      </div>
+      <p>"Software is engineered by logic, but it succeeds through human communication. Writing bulletproof, memory-safe code is my foundation; articulating ideas clearly and elevating teammates is my greatest strength."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROJECTS
+═══════════════════════════════════════════ -->
+<section id="projects" class="section section-tinted">
+  <div class="container">
+    <div class="sec-label reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      Featured Portfolio
+    </div>
+    <h2 class="sec-title reveal">Engineered Systems</h2>
+
+    <div class="projects-wrap">
+
+      <!-- Project 1: Data Structures Engine -->
+      <div class="proj-card reveal" data-project="ds-engine">
+        <div class="proj-top">
+          <div class="proj-icon proj-icon-purple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-num">01</span>
+            <span class="proj-badge">C++ &amp; Data Structures</span>
+          </div>
+        </div>
+        <h3>Data Structures &amp; Expression Compiler</h3>
+        <p>A zero-dependency computational engine implementing ground-up Doubly Linked Lists, Generic Stacks, and recursive Binary Search Trees (BST), combined with a Shunting-Yard arithmetic expression evaluator and empirical Big-O runtime profiling.</p>
+        <div class="proj-features">
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Generic Templated BST &amp; Linked Lists
+          </div>
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Stack-Based Shunting-Yard Parser
+          </div>
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Empirical Big-O Benchmark Suite
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span>Data Structures</span><span>Trees</span><span>Algorithms</span><span>Templates</span></div>
+          <button class="proj-arrow-btn" aria-label="View technical breakdown" title="View Deep-Dive Details">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 2: Student Management System (OOP) -->
+      <div class="proj-card reveal" data-project="student-mgmt">
+        <div class="proj-top">
+          <div class="proj-icon proj-icon-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-num">02</span>
+            <span class="proj-badge">C++ &amp; OOP Architecture</span>
+          </div>
+        </div>
+        <h3>Academic Registry &amp; Information System</h3>
+        <p>An enterprise-style academic registry designed with strict object-oriented hierarchies (Inheritance, Polymorphic contracts, Encapsulation) and persistent serialized data stores supporting CRUD, GPA analytics, and defensive input auditing.</p>
+        <div class="proj-features">
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Polymorphic Person/Student Hierarchy
+          </div>
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Persistent Binary &amp; Text I/O Streams
+          </div>
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Input Sanitization &amp; Memory Safety
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span>OOP</span><span>Polymorphism</span><span>File I/O</span><span>Clean Architecture</span></div>
+          <button class="proj-arrow-btn" aria-label="View technical breakdown" title="View Deep-Dive Details">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 3: Simple Banking System -->
+      <div class="proj-card reveal" data-project="banking-system">
+        <div class="proj-top">
+          <div class="proj-icon proj-icon-green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-num">03</span>
+            <span class="proj-badge">C++ &amp; Financial Logic</span>
+          </div>
+        </div>
+        <h3>Secure Financial Transaction Engine</h3>
+        <p>A transactional banking simulation enforcing strict state invariants, overdraft immunity, PIN authentication, and structured historical audit logging with formatted statement generation.</p>
+        <div class="proj-features">
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Atomic Deposit, Withdrawal &amp; Transfer
+          </div>
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Strict Balance Invariant Safeguards
+          </div>
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Auditable Transaction Ledger
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span>FinTech</span><span>Security</span><span>Invariants</span><span>C++</span></div>
+          <button class="proj-arrow-btn" aria-label="View technical breakdown" title="View Deep-Dive Details">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 4: Task Scheduler & To-Do CLI -->
+      <div class="proj-card reveal" data-project="todo-app">
+        <div class="proj-top">
+          <div class="proj-icon proj-icon-amber">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          </div>
+          <div class="proj-meta">
+            <span class="proj-num">04</span>
+            <span class="proj-badge">C++ &amp; Data Structures</span>
+          </div>
+        </div>
+        <h3>Priority Task Orchestrator &amp; CLI</h3>
+        <p>A high-performance command-line scheduling tool driven by priority queues, multi-criteria deadline sorting, status filters, and robust state persistence across terminal sessions.</p>
+        <div class="proj-features">
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Priority Queue &amp; Heuristic Sorting
+          </div>
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Cross-Session State Serialization
+          </div>
+          <div class="proj-feat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            High-Throughput CLI Interface
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-tags"><span>Productivity</span><span>Priority Queues</span><span>CLI</span><span>Serialization</span></div>
+          <button class="proj-arrow-btn" aria-label="View technical breakdown" title="View Deep-Dive Details">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     EDUCATION
+═══════════════════════════════════════════ -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="sec-label reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      Academic Excellence
+    </div>
+    <h2 class="sec-title reveal">Scholarly Foundations</h2>
+
+    <div class="edu-layout reveal">
+      <!-- Timeline line -->
+      <div class="edu-timeline">
+        <div class="edu-tl-line">
+          <div class="edu-tl-dot edu-tl-dot-active"></div>
+        </div>
+      </div>
+
+      <!-- Edu card -->
+      <div class="edu-card-new">
+        <div class="edu-card-head">
+          <div class="edu-badge-wrap">
+            <div class="edu-uni-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+          </div>
+          <div class="edu-head-info">
+            <span class="edu-status-chip">
+              <span class="chip-pulse"></span>
+              2nd Year Major (Sophomore Standing)
+            </span>
+            <span class="edu-period">2024 — 2029 (Expected)</span>
+          </div>
+        </div>
+
+        <h3 class="edu-degree">Bachelor of Computer Science &amp; Engineering</h3>
+        <p class="edu-univ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          BNU University, Egypt
+        </p>
+        <p class="edu-desc">
+          Pursuing a comprehensive curriculum rooted in mathematical foundations, algorithmic complexity, software engineering principles, and low-level computer organization. Active competitor representing the institution in collegiate programming tournaments (ICPC Level 1).
+        </p>
+
+        <!-- Coursework Tags -->
+        <div class="edu-coursework">
+          <span class="cw-title">Curriculum &amp; Specialized Coursework:</span>
+          <div class="cw-tags">
+            <span class="cw-tag cw-done">Programming Fundamentals in C++</span>
+            <span class="cw-tag cw-done">Object-Oriented Programming (OOP)</span>
+            <span class="cw-tag cw-done">Linear &amp; Non-Linear Data Structures</span>
+            <span class="cw-tag cw-done">Discrete Mathematics &amp; Logic</span>
+            <span class="cw-tag cw-current">Algorithm Design &amp; Complexity Analysis</span>
+            <span class="cw-tag cw-current">Computer Architecture &amp; Organization</span>
+          </div>
+        </div>
+
+        <div class="edu-stats-row">
+          <div class="edu-stat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            <div>
+              <strong>3.1 / 4.0</strong>
+              <span>Cumulative GPA Standing</span>
+            </div>
+          </div>
+          <div class="edu-stat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <div>
+              <strong>Sophomore</strong>
+              <span>Year 2 of 5</span>
+            </div>
+          </div>
+          <div class="edu-stat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <strong>ICPC Competitor</strong>
+              <span>Level 1 Participant</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress bar for degree completion -->
+        <div class="edu-progress">
+          <div class="edu-progress-label">
+            <span>Degree Progression (Sophomore Standing)</span>
+            <span>~40%</span>
+          </div>
+          <div class="edu-progress-bar">
+            <div class="edu-progress-fill" data-pct="40"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<section id="contact" class="section section-tinted">
+  <div class="container">
+    <div class="sec-label reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Direct Connection
+    </div>
+    <h2 class="sec-title reveal">Let's Build Something Exceptional</h2>
+
+    <div class="contact-grid">
+      <!-- Left -->
+      <div class="contact-left reveal">
+        <p class="contact-intro">
+          I am actively evaluating <strong>Summer Software Engineering Internships</strong>, high-impact systems projects, and mentorship connections. If you value rigor, clean architecture, and relentless curiosity, let's connect.
+        </p>
+
+        <div class="cinfo-cards">
+          <a href="mailto:khairykewan13@gmail.com" class="cinfo-card">
+            <div class="cinfo-icon cinfo-email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="cinfo-text">
+              <span>Direct Email</span>
+              <strong>khairykewan13@gmail.com</strong>
+            </div>
+            <svg class="cinfo-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+
+          <a href="tel:+201554226701" class="cinfo-card">
+            <div class="cinfo-icon cinfo-phone">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.62 4.38 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="cinfo-text">
+              <span>Mobile &amp; WhatsApp</span>
+              <strong>+20 155 422 6701</strong>
+            </div>
+            <svg class="cinfo-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+
+          <div class="cinfo-card no-hover">
+            <div class="cinfo-icon cinfo-loc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="cinfo-text">
+              <span>Primary Hub</span>
+              <strong>Egypt · Remote &amp; Relocation Ready</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fName">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Your Name
+            </label>
+            <input type="text" id="fName" placeholder="Engineering Lead / Recruiter" required/>
+          </div>
+          <div class="form-group">
+            <label for="fEmail">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Corporate Email
+            </label>
+            <input type="email" id="fEmail" placeholder="recruiter@techcompany.com" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fSubject">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+            Subject
+          </label>
+          <input type="text" id="fSubject" placeholder="Software Engineering Internship / High-Impact Opportunity"/>
+        </div>
+        <div class="form-group">
+          <label for="fMsg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Message
+          </label>
+          <textarea id="fMsg" rows="5" placeholder="Hello Khairy, we were impressed by your systems background and competitive programming experience..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="formSubmit">
+          <span class="submit-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Transmit Message
+          </span>
+        </button>
+        <p class="form-success" id="formSuccess">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Message transmitted successfully. Expect an articulate response promptly.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROJECT DETAILS MODAL
+═══════════════════════════════════════════ -->
+<div class="project-modal" id="projectModal" aria-hidden="true" role="dialog">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-dialog">
+    <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+    <div class="modal-content" id="modalContent">
+      <!-- Injected by script.js -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="container footer-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-k">K</span><span class="logo-e">E</span>
+      <span class="logo-dot"></span>
+    </a>
+    <p>© 2026 Khairy ElSayed · Computer Science Major · BNU University</p>
+    <a href="#hero" class="back-top-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Ascend to Top
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
